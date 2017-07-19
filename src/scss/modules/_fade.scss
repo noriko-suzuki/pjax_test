@@ -1,0 +1,9 @@
+.fadeOut {
+    animation: fadeOut .5s cubic-bezier(.55,0,.1,1) both;
+}
+.fadeIn {
+    animation: fadeIn .5s cubic-bezier(.55,0,.1,1) both;
+}
+
+@keyframes fadeOut { to { opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2); }}
+@keyframes fadeIn { from { opacity: 0; -webkit-transform: scale(.8); transform: scale(.8); }}
