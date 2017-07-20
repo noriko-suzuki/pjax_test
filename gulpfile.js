@@ -1,5 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var plumber = require('gulp-plumber');
+var notify  = require('gulp-notify');
 var globImporter = require('sass-glob-importer');
 var autoprefixer = require('gulp-autoprefixer');
 var BrowserSync = require('browser-sync');
@@ -17,6 +19,10 @@ gulp.task('html', function() {
 
 gulp.task('sass', function() {
   gulp.src('src/scss/**/*.scss')
+
+    .pipe(plumber({
+      errorHandler: notify.onError("Error: <%= error.message %>")
+    }))
     .pipe(sass({ importer: globImporter() }))
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
@@ -37,6 +43,7 @@ gulp.task('js', function() {
       'src/js/libs/imagesloaded.pkgd.js',
       'src/js/index.js',
     ])
+    .pipe(plumber())
     .pipe(concat('bundle.js'))
     .pipe(uglify())
     .pipe(gulp.dest('dist/js'))
