@@ -31,6 +31,7 @@ gulp.task('js', function() {
   gulp.src([
       'src/js/libs/jquery.js',
       'src/js/libs/jquery.easing.1.3.js',
+      'src/js/libs/jquery.pjax.js',
       'src/js/libs/jquery.scrollify.js',
       'src/js/libs/jquery.waypoints.js',
       'src/js/libs/imagesloaded.pkgd.js',

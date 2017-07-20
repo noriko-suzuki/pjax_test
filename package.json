@@ -31,6 +31,7 @@
     "imagesloaded": "^4.1.2",
     "jquery": "^3.2.1",
     "jquery-easing": "0.0.1",
+    "jquery-pjax": "^2.0.1",
     "jquery-scrollify": "^1.0.14",
     "pjax": "^0.2.4",
     "waypoints": "^4.0.1"

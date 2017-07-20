@@ -27,7 +27,7 @@
 }
 
 #page01{
-  .l-body{
+  &.l-body{
     background: $color-page01;
 
     .btn{
@@ -40,7 +40,7 @@
 
 
 #page02{
-  .l-body{
+  &.l-body{
     background: $color-page02;
 
     .btn{

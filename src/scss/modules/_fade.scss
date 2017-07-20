@@ -1,15 +1,13 @@
 .fadeOut {
-    animation: fadeOut .5s cubic-bezier(.55,0,.1,1) both;
+    animation: fadeOut .6s $easeInQuad both;
 }
 .fadeIn {
-    animation: fadeIn .5s cubic-bezier(.55,0,.1,1) both;
+    animation: fadeIn .6s $easeInQuad both;
 }
 
-@keyframes fadeOut { 
-	0% { opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2); }
-	100% { opacity: 0; -webkit-transform: scale(.8); transform: scale(.8); }
+@keyframes fadeOut {
+	to { opacity: 0; -webkit-transform: scale(1.1); transform: scale(1.1); }
 }
-@keyframes fadeIn { 
-	0% { opacity: 0; -webkit-transform: scale(.8); transform: scale(.8); }
-	100% { opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2); }
+@keyframes fadeIn {
+	from { opacity: 0; -webkit-transform: scale(0.9); transform: scale(0.9); }
 }
