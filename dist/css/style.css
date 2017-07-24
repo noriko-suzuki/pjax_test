@@ -584,6 +584,9 @@ a:active {
   text-decoration: none;
   outline: none; }
 
+.body-container {
+  background: #70c3e2; }
+
 .l-body {
   width: 100vw;
   height: 100vh;
@@ -620,6 +623,38 @@ a:active {
 
 #page02.l-body .btn:hover {
   color: #F08080; }
+
+.bookOut {
+  -webkit-animation: bookOut 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: bookOut 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
+
+.bookIn {
+  -webkit-animation: bookIn 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: bookIn 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
+
+@-webkit-keyframes bookOut {
+  to {
+    opacity: 0;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%); } }
+
+@keyframes bookOut {
+  to {
+    opacity: 0;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%); } }
+
+@-webkit-keyframes bookIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(10%);
+    transform: translateX(10%); } }
+
+@keyframes bookIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(10%);
+    transform: translateX(10%); } }
 
 .btn {
   border: 2px solid #ffffff;

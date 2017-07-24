@@ -1,0 +1,13 @@
+.bookOut {
+    animation: bookOut .5s $easeInQuad both;
+}
+.bookIn {
+    animation: bookIn .5s $easeInQuad both;
+}
+
+@keyframes bookOut {
+	to { opacity: 0; transform: translateX(-10%); }
+}
+@keyframes bookIn {
+	from { opacity: 0; transform: translateX(10%); }
+}
